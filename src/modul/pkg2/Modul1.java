@@ -15,5 +15,18 @@ public class Modul1 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         
+        int angka;
+        String jenis = "";
+        
+        System.out.print("Masukkan angka bulat positif atau negatif: ");
+        angka = input.nextInt();
+        
+        if (angka < 0) {
+            jenis = "Negatif";
+        } else {
+            jenis = "Positif";
+        }
+        
+        System.out.println("Angka " + angka + " merupakan angka " + jenis);
     }
 }
